@@ -30,7 +30,8 @@ public class MenuAdmin extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void GoToMhs (View view) {
+
+    public void GotoMhs(View view) {
         Intent intent = new Intent(MenuAdmin.this, LihatDosen.class);
         startActivity(intent);
     }

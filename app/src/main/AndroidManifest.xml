@@ -18,17 +18,19 @@
         <activity android:name=".DataDosen" />
         <activity android:name=".RecycleView" />
         <activity android:name=".LihatMatkul" />
-        <activity android:name=".MenuAdmin" />
+        <activity android:name=".MenuAdmin" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity android:name=".MenuMahasiswa" />
         <activity android:name=".DataMahasiswa" />
         <activity android:name=".LoginScreen" />
-        <activity android:name=".SpalshScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SpalshScreen"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
         <activity android:name=".MainActivity"></activity>
     </application>
 

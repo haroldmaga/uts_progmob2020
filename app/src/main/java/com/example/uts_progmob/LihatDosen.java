@@ -23,7 +23,7 @@ public class LihatDosen extends AppCompatActivity {
 
         addData();
 
-       /* recyclerView = findViewById(R.id.rvDosen);
+       /*recyclerView = findViewById(R.id.rvDosen);
         dataDosenAdapter = new DataDosenAdapter(dataDosenArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(LihatDosen.this);
         recyclerView.setLayoutManager(layoutManager);
