@@ -20,6 +20,7 @@ public class LihatKrs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_krs);
+        setTitle("Lihat Data KRS");
 
         addData();
 
@@ -33,5 +34,6 @@ public class LihatKrs extends AppCompatActivity {
     private void addData(){
         dataKrsArrayList = new ArrayList<>();
         dataKrsArrayList.add(new DataKrs("SI0123-Progmob", "2", "Rabu", "3", "Argo Wibowo", "40"));
+        dataKrsArrayList.add(new DataKrs("SI1234-Progweb", "3","Senin", "3","Erick Kurniawan","30"));
     }
 }

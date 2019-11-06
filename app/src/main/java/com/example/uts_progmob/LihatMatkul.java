@@ -21,6 +21,8 @@ public class LihatMatkul extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_matkul);
 
+        setTitle("Lihat Data MataKuliah");
+
         addDate();
 
         recyclerView = findViewById(R.id.rvMatkul);
@@ -33,6 +35,7 @@ public class LihatMatkul extends AppCompatActivity {
     private void addDate(){
         dataMatkulArrayList = new ArrayList<>();
         dataMatkulArrayList.add(new DataMatkul("SI0123-Progmob", "2", "Rabu", "3"));
+        dataMatkulArrayList.add(new DataMatkul("SI1234", "3","Senin","3"));
     }
 
 }

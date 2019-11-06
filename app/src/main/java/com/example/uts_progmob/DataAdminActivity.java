@@ -10,30 +10,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class CrudKrs extends AppCompatActivity {
+public class DataAdminActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crud_krs);
+        setContentView(R.layout.activity_data_admin);
 
-        Button simpanButton = (Button) findViewById(R.id.btnSimpanKrsAmd);
+        Button simpanButton = (Button) findViewById(R.id.btnSimpanAdm);
         simpanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CrudKrs.this);
-                builder.setMessage("Apakah ingin menyimpan data?").setNegativeButton("BATAL", new DialogInterface.OnClickListener() {
+                AlertDialog.Builder builder = new AlertDialog.Builder(DataAdminActivity.this);
+                builder.setMessage("Apakah ingin menyimpan data?").setNegativeButton("Batal", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
-                        Toast.makeText(CrudKrs.this,"Tidak jadi menyimpan", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DataAdminActivity.this,"Tidak jadi menyimpan", Toast.LENGTH_SHORT).show();
                     }
                 })
-                        .setPositiveButton("YA", new DialogInterface.OnClickListener() {
+                        .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int which) {
-                                Intent intent = new Intent(CrudKrs.this, MenuAdmin.class);
+                                Intent intent = new Intent(DataAdminActivity.this, MenuAdmin.class);
                                 startActivity(intent);
-                                Toast.makeText(CrudKrs.this, "Berhasil Menyimpan", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DataAdminActivity.this, "Berhasil menyimpan", Toast.LENGTH_SHORT).show();
                             }
                         });
                 AlertDialog dialog = builder.create();

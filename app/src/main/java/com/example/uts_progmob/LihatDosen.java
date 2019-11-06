@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.uts_progmob.Adapter.DataDosenAdapter;
+import com.example.uts_progmob.Model.DataDosen;
 import com.example.uts_progmob.Adapter.DataKelasAdapter;
 
 import java.util.ArrayList;
@@ -23,16 +24,17 @@ public class LihatDosen extends AppCompatActivity {
 
         addData();
 
-       /*recyclerView = findViewById(R.id.rvDosen);
+        recyclerView = findViewById(R.id.rvDosen);
         dataDosenAdapter = new DataDosenAdapter(dataDosenArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(LihatDosen.this);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(dataDosenAdapter);*/
+        recyclerView.setAdapter(dataDosenAdapter);
     }
 
     private void addData(){
         dataDosenArrayList = new ArrayList<>();
-        dataDosenArrayList.add(new DataDosen());
+        dataDosenArrayList.add(new DataDosen("72160071-Eben Haezer", "S.Kom","Jl.Nologaten","ebenhaezer688@gmail.com"));
+        dataDosenArrayList.add(new DataDosen("72160070-Setiawan","S.Kom","Jl.Seturan Raya", "setiawanel16@gmail.com"));
     }
 
 

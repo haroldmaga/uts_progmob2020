@@ -22,7 +22,9 @@ private ArrayList<DataMhs> dataMhsArrayList;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_data_mhs);
+        setTitle("Lihat Data Mahasiswa");
 
+        addData();
 
         recyclerView = findViewById(R.id.rcMhs);
         dataMhsAdapter = new DataMhsAdapter(dataMhsArrayList);
@@ -34,5 +36,6 @@ private ArrayList<DataMhs> dataMhsArrayList;
     private void addData(){
         dataMhsArrayList = new ArrayList<>();
         dataMhsArrayList.add(new DataMhs("72160071-Eben Haezer G", "Nologaten", "ebenhaezer688@gmail.com"));
+        dataMhsArrayList.add(new DataMhs("72160025-Sombuk", "Seturan", "sombuk123@gmail.com"));
     }
 }

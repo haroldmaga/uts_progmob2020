@@ -21,6 +21,8 @@ public class LihatKelas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lihat_kelas);
 
+        setTitle("Lihat Data Kelas");
+
         addData();
 
         recyclerView = findViewById(R.id.rvKelas);
@@ -32,7 +34,8 @@ public class LihatKelas extends AppCompatActivity {
 
     private void addData(){
         dataKelasArrayList = new ArrayList<>();
-        dataKelasArrayList.add(new DataKelas("SI0123-Progmob","2", "Rabu", "Argo Wibowo", "32"));
+        dataKelasArrayList.add(new DataKelas("SI0123-Progmob","Sesi : 2", "Hari : Rabu", "Dosen : Argo Wibowo", "Jumlah Mahasiswa : 32"));
+        dataKelasArrayList.add(new DataKelas("SI1234-Progweb","Sesi : 3","Hari : Senin","Dosen : Erick Kurniawan","Jumlah Mahasiswa : 30"));
 
     }
 }

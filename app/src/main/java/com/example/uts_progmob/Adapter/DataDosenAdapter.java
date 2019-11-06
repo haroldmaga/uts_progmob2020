@@ -49,8 +49,8 @@ public class DataDosenAdapter extends RecyclerView.Adapter<DataDosenAdapter.View
             super(view);
             txtNidnNama = view.findViewById(R.id.txtNidnNama);
             txtGelar = view.findViewById(R.id.txtGelar);
-            txtEmail = view.findViewById(R.id.txtEmail);
-            txtAlamat = view.findViewById(R.id.txtAlamat);
+            txtEmail = view.findViewById(R.id.txtEmailD);
+            txtAlamat = view.findViewById(R.id.txtAlamatD);
         }
     }
 

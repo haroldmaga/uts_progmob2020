@@ -3,14 +3,14 @@ package com.example.uts_progmob.Model;
 public class DataDosen {
     public String nidnNama;
     public String gelar;
-    public String Alamat;
-    public String Email;
+    public String alamat;
+    public String email;
 
     public DataDosen(String nidnNama, String gelar, String alamat, String email) {
         this.nidnNama = nidnNama;
         this.gelar = gelar;
-        this.Alamat = alamat;
-        this.Email = email;
+        this.alamat = alamat;
+        this.email = email;
     }
 
     public String getNidnNama() {
@@ -30,18 +30,18 @@ public class DataDosen {
     }
 
     public String getAlamat() {
-        return Alamat;
+        return alamat;
     }
 
     public void setAlamat(String alamat) {
-        Alamat = alamat;
+        alamat = alamat;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        email = email;
     }
 }

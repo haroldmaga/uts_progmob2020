@@ -6,11 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MenuMahasiswa">
 
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:popupTheme="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="-31dp"
+        tools:layout_editor_absoluteY="71dp">
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            tools:text="KRS Home" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnLogout"
+            android:text="Logout"
+            android:gravity="end"
+            android:onClick="GoToLogin"
+            />
+    </android.support.v7.widget.Toolbar>-->
+
     <TextView
         android:id="@+id/dataDiriTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="DataDiri"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +55,7 @@
         android:id="@+id/lihatKelasTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:text="Lihat Kelas"
         app:layout_constraintStart_toEndOf="@+id/daftarKrsTxt"
@@ -53,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:onClick="GoToDataMhs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher_round" />

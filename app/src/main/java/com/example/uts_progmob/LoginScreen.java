@@ -15,7 +15,7 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     public void GoLogin(View view) {
-        Intent intent = new Intent(LoginScreen.this, MenuMahasiswa.class);
+        Intent intent = new Intent(LoginScreen.this, MenuAdmin.class);
         startActivity(intent);
     }
 }
