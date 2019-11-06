@@ -17,6 +17,8 @@ public class CrudKrs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crud_krs);
 
+        setTitle("ADMIN-KELOLA KRS");
+
         Button simpanButton = (Button) findViewById(R.id.btnSimpanKrsAmd);
         simpanButton.setOnClickListener(new View.OnClickListener() {
             @Override
