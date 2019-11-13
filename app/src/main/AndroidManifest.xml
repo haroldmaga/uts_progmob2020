@@ -20,15 +20,17 @@
         <activity android:name=".RecycleView" />
         <activity android:name=".LihatMatkul" />
         <activity android:name=".MenuAdmin">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MenuMahasiswa"></activity>
         <activity android:name=".DataMahasiswa" />
-        <activity android:name=".LoginScreen" />
+        <activity android:name=".LoginScreen" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".SpalshScreen"></activity>
         <activity android:name=".MainActivity" />
     </application>

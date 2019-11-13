@@ -38,6 +38,7 @@ public class MenuAdmin extends AppCompatActivity {
                                 Toast.makeText(MenuAdmin.this, "Berhasil LogOut", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MenuAdmin.this, LoginScreen.class);
                                 startActivity(intent);
+                                MenuAdmin.super.onDestroy();
                             }
                         });
                 AlertDialog dialog = builder.create();
