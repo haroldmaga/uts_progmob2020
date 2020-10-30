@@ -18,6 +18,8 @@ import com.example.uts_progmob.Network.RetrofitClientInstance;
 import java.util.ArrayList;
 import java.util.List;
 
+import retrofit2.Response;
+
 public class LihatDosen extends AppCompatActivity {
     private RecyclerView recyclerView;
     private DataDosenAdapter dataDosenAdapter;
@@ -36,7 +38,7 @@ public class LihatDosen extends AppCompatActivity {
         progressDialog.show();
 
         GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService);
-        Call<List<DataDosen>> call = service.getDosenAll("72160012");
+        Call<List<DataDosen> call = service.getDosenAll("72160050");
         call.enqueue(new Call.Callback<>() {
             @Override
             public void onResponse(Call<List<DataDosen>> call, Response<List<DataDosen>> response) {
@@ -62,7 +64,7 @@ public class LihatDosen extends AppCompatActivity {
     }
     private void addData() {
         dataDosenArrayList = new ArrayList<>();
-        dataDosenArrayList.add(new DataDosen("72160085", "S.Kom", "Jl.Nologaten", "ebenhaezer688@gmail.com","ASA","Yosua Erick Gunawan",));
-        dataDosenArrayList.add(new DataDosen("72160070-Setiawan", "S.Kom", "Jl.Seturan Raya", "setiawanel16@gmail.com","asa","ssa"));
+        dataDosenArrayList.add(new DataDosen("72160050-immanuel Harold Maga", "S.Kom", "Jl.Maguharjo", "haroldmaga16@gmail.com","ASA","Immanuel Harold Maga"));
+        dataDosenArrayList.add(new DataDosen("72160050-harold", "S.Kom", "Jl.nanas6 ", "hammeryk@gmail.com","asa","ssa"));
     }
 }

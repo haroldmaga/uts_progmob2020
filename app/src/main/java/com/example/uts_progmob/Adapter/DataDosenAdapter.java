@@ -31,7 +31,7 @@ public class DataDosenAdapter extends RecyclerView.Adapter<DataDosenAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull DataDosenAdapter.ViewHolder holder, int position){
-        holder.txtNidnNama.setText(dataDosenArrayList.get(position).getNidnNama());
+        holder.txtNidnNama.setText(dataDosenArrayList.get(position).getNidn());
         holder.txtGelar.setText(dataDosenArrayList.get(position).getGelar());
         holder.txtAlamat.setText(dataDosenArrayList.get(position).getAlamat());
         holder.txtEmail.setText(dataDosenArrayList.get(position).getEmail());
