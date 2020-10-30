@@ -35,7 +35,7 @@ private ArrayList<DataMhs> dataMhsArrayList;
 
     private void addData(){
         dataMhsArrayList = new ArrayList<>();
-        dataMhsArrayList.add(new DataMhs("72160071-Eben Haezer G", "Nologaten", "ebenhaezer688@gmail.com"));
+        dataMhsArrayList.add(new DataMhs("721600750-Harold Maga", "Nologaten", "haroldmaga16@gmail.com"));
         dataMhsArrayList.add(new DataMhs("72160025-Sombuk", "Seturan", "sombuk123@gmail.com"));
     }
 }
